@@ -64,7 +64,7 @@ router.route('/busqueda')
   router.route('/todos')
   .get(async (req, res)=> {
     client.search({
-          index:"marcos",
+          index:"marco",
           type:"_doc",      
     },(err,resp,status)=>{
           if(err){
@@ -80,7 +80,7 @@ router.route('/busqueda')
   router.route('/borra/:id')
   .get(async (req, res)=> {
     client.delete({
-      index:"marcos",
+      index:"marco",
       type:"_doc",
       body:req.body,
       id:req.params.id,
@@ -97,7 +97,7 @@ router.route('/busqueda')
   router.route('/borra/:id')
   .delete(async (req, res)=> {
     client.delete({
-      index:"marcos",
+      index:"marco",
       type:"_doc",
       body:req.body,
       id:req.params.id,
@@ -114,7 +114,7 @@ router.route('/busqueda')
   router.route('/leyendo/:id')
   .get(async (req, res)=> {
     client.get({
-      index:"marcos",
+      index:"marco",
       type:"_doc",
       id:req.params.id
     },(err,resp,status)=>{

@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "ejemplo API para Suda 23Nov2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon src/index.js"
+  },
+  "author": "Thoughtworks",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.4",
+    "elasticsearch": "^16.7.1",
+    "express": "^4.16.3",
+    "jest": "^25.3.0",
+    "mongoose": "^5.9.25",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -76,6 +76,20 @@ router.route('/busqueda')
     })
   })
 
+  router.route('/vuelos')
+  .get(async (req, res)=> {
+    client.search({
+          index:"kibana_sample_data_flights",
+          type:"_doc",      
+    },(err,resp,status)=>{
+          if(err){
+            res.send(err)
+          }
+          else {
+            res.send(resp)
+          }
+    })
+  })
 
   router.route('/borra/:id')
   .get(async (req, res)=> {

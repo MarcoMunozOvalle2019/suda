@@ -233,6 +233,64 @@
 			"response": []
 		},
 		{
+			"name": "LEE TODOS  NodeJs final Vuelos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-ndjson",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/vuelos",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"vuelos"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
 			"name": "BORRA uno final NodeJs final Copy",
 			"request": {
 				"method": "DELETE",

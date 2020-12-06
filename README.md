@@ -1,1 +1,1 @@
-Api Rest for elasticsearh kibana
+Example of Api Rest for elasticsearh kibana. 
